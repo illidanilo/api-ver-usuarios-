@@ -30,7 +30,7 @@ def obtener_token(usuario, clave):
 obtener_token(conf.usuario, conf.clave)
 
 
-##GET http://apic-ip-address/api/class/topSystem.json
+
 def aaauser():
     cabecera = {
         "Content-Type": "application/json"
