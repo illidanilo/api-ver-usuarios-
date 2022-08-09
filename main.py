@@ -31,7 +31,7 @@ obtener_token(conf.usuario, conf.clave)
 
 
 ##GET http://apic-ip-address/api/class/topSystem.json
-def top_system():
+def aaauser():
     cabecera = {
         "Content-Type": "application/json"
     }
@@ -44,6 +44,7 @@ def top_system():
     for i in range(0, total):
     #respuesta.json()["imdata"][0]["topSystem"]["attributes"]["state"]
     #se cambia el 0 por la variable i que indica que tiene el valor del 1 al 3 segun lo definido
+    #for i in range(0, total): similar a lo de arriba pero busca el valor automaticamente
     #respuesta.json()["imdata"][i]["topSystem"]["attributes"]["state"]
 
         nombre = respuesta.json()["imdata"][i]["aaaUser"]["attributes"]["name"]
@@ -53,4 +54,4 @@ def top_system():
 
         print(nombre + "-" + estado + "-" + expira)
 
-top_system()
+aaauser()
